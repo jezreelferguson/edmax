@@ -251,13 +251,13 @@ function Header() {
                       <i className="bi bi-cart3"></i>
                       <span> My Cart</span>
                     </Link>
-                    {/* <a
+                    <Link
                       className="dropdown-item d-flex align-items-center"
-                      href="account.html"
+                      to={'/admin'}
                     >
-                      <i className="bi bi-gear me-2"></i>
-                      <span>Settings</span>
-                    </a> */}
+                      <i className="bi bi-person me-2"></i>
+                      <span>Admin</span>
+                    </Link>
                   </div>
                   <div className="dropdown-footer">
                     <Link
