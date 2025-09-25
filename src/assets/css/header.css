@@ -1,0 +1,64 @@
+.logo2{
+    width: 100%;
+    height: 100%;
+}
+
+/* Cart Badge Styles */
+.cart-badge {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a52) !important;
+  color: white !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  min-width: 20px !important;
+  height: 20px !important;
+  border-radius: 10px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  animation: pulse 0.3s ease-in-out !important;
+  box-shadow: 0 2px 4px rgba(255, 107, 107, 0.3) !important;
+}
+
+.cart-badge:empty {
+  display: none !important;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+/* Cart notification animation */
+.header-action-btn {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.header-action-btn:hover .cart-badge {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(255, 107, 107, 0.4) !important;
+}
+
+/* Floating notification dot styles */
+.notification-dot {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a52) !important;
+  color: white !important;
+  font-size: 0.7rem !important;
+  font-weight: 600 !important;
+  min-width: 18px !important;
+  height: 18px !important;
+  border-radius: 9px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: absolute !important;
+  top: -5px !important;
+  right: -5px !important;
+  animation: pulse 0.3s ease-in-out !important;
+  box-shadow: 0 2px 4px rgba(255, 107, 107, 0.3) !important;
+}
+
+.floating-icon {
+  position: relative;
+}
